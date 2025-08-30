@@ -1,7 +1,6 @@
 import sys
 import pickle
 import os
-import re
 
 def main():
     # Check if URL argument is provided
@@ -10,7 +9,7 @@ def main():
         sys.exit(1)
     
     url = sys.argv[1]
-    
+
     # Get current script directory
     current_dir = os.path.dirname(__file__)
     # Go up two folders (from backend/python to project root), then into train_model folder
